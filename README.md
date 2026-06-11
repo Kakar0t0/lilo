@@ -4,6 +4,28 @@ Site vitrine moderne pour une entreprise de création de mobilier bois & acier.
 
 ## Lancer le projet
 
+### Mode Docker dev
+
+Ce mode recharge les modifications de `src/` sans rebuild l'image Docker.
+
+```bash
+docker compose -f docker-compose.dev.yml up -d
+```
+
+Puis ouvrir http://127.0.0.1:5173.
+
+### Mode Docker production
+
+Ce mode sert le build final avec Nginx. Il faut rebuild après modification.
+
+```bash
+docker compose up -d --build
+```
+
+Puis ouvrir http://127.0.0.1:8080.
+
+### Mode local
+
 ```bash
 npm install
 npm run dev
