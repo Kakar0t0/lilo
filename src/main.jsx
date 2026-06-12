@@ -16,6 +16,11 @@ import {
   X,
 } from 'lucide-react'
 import logo from './assets/logo-lilocreation.png'
+import heroBackground from './assets/images/back.jpg'
+import billardImage from './assets/images/Billard.jpg'
+import tableBasseImage from './assets/images/Table basse.JPG'
+import meubleBasImage from './assets/images/mb2.jpg'
+import savoirFaireImage from './assets/images/IMG_6072.jpeg'
 import './styles.css'
 
 const projects = [
@@ -23,19 +28,19 @@ const projects = [
     label: 'Table signature',
     title: 'Chêne massif, piètement acier et lignes tendues',
     meta: 'Salle à manger · Bois huilé · Acier noir',
-    image: 'https://images.unsplash.com/photo-1604578762246-41134e37f9cc?auto=format&fit=crop&w=1400&q=88',
+    image: billardImage,
   },
   {
     label: 'Agencement intérieur',
     title: 'Bibliothèque murale dessinée pour la pièce',
     meta: 'Rangement · Sur mesure · Finition mate',
-    image: 'https://images.unsplash.com/photo-1615874694520-474822394e73?auto=format&fit=crop&w=1200&q=88',
+    image: tableBasseImage,
   },
   {
     label: 'Mobilier atelier',
     title: 'Meuble TV bois et métal, sobre et durable',
     meta: 'Salon · Structure acier · Bois naturel',
-    image: 'https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&fit=crop&w=1200&q=88',
+    image: meubleBasImage,
   },
 ]
 
@@ -168,7 +173,7 @@ function App() {
         <section className="hero">
           <img
             className="heroImage"
-            src="https://images.unsplash.com/photo-1600566753190-17f0baa2a6c3?auto=format&fit=crop&w=2200&q=90"
+            src={heroBackground}
             alt="Intérieur contemporain avec table en bois"
           />
           <div className="heroScrim" />
@@ -264,7 +269,7 @@ function App() {
         <section id="savoir-faire" className="expertise">
           <div className="expertiseVisual" data-reveal>
             <img
-              src="https://images.unsplash.com/photo-1504148455328-c376907d081c?auto=format&fit=crop&w=1300&q=88"
+              src={savoirFaireImage}
               alt="Atelier de fabrication bois"
             />
             <div className="expertiseBadge">
